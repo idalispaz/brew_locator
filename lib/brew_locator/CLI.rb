@@ -43,7 +43,7 @@ class CLI
     end 
     
     def goodbye 
-        puts "Thank you for using Brew! Until next time!"
+        puts "Thank you for using Brew! Until next time!".colorize(:yellow)
         exit 
     end 
 end 
