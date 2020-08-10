@@ -21,7 +21,7 @@ class APIService
     end 
 
     def brewery_name_list
-        @breweries.each do | brew_array| 
+        @breweries.each do | brew_array | 
              brewers = Brewers.new(brew_array) 
              brewers.print_pretty
         end 

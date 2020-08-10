@@ -17,13 +17,13 @@ class CLI
             @user_input = gets.chomp 
             if @user_input != "exit"
                 brewery = @api.get_breweries_by_zip_code(@user_input)
-                learn_address
+                zip_code
             else
                 goodbye 
             end 
     end
 
-    def learn_address
+    def zip_code
         puts "Would You like to search again?"
         puts "yes"
         puts "no"
@@ -37,7 +37,7 @@ class CLI
         else 
             puts "\n"
             puts "Invalid Input"
-            learn_address
+            zip_code
         end 
     end 
     
