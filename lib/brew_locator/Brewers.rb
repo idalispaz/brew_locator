@@ -15,10 +15,6 @@ class Brewers
         @@all
     end 
 
-    def self.find_by_brewery_zip(name)
-        self.all.find { |zip| zip.name.downcase == name.downcase}
-    end 
-
     def print_pretty
         puts @name.colorize(:yellow)
         puts "\n"
@@ -28,7 +24,7 @@ class Brewers
         puts "\n"
         puts @brewery_type
         puts "\n"
-        puts @website_url
+        puts @website_url.colorize(:blue)
         puts "\n"
     end 
 end 

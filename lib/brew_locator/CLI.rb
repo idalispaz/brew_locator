@@ -11,6 +11,7 @@ class CLI
     end 
     
     def menu 
+        puts "\n"
         puts "Please type in your 5 digit zip code:".colorize(:yellow)
             @api_1 = APIService.new
             @user_input = gets.chomp 
@@ -24,8 +25,9 @@ class CLI
 
     def learn_address
         puts "Would You like to search again?"
-        puts "Yes"
-        puts "No"
+        puts "yes"
+        puts "no"
+        puts "\n"
         @user_input = gets.chomp
         case @user_input 
         when "yes"
@@ -33,6 +35,7 @@ class CLI
         when "no"
             goodbye 
         else 
+            puts "\n"
             puts "Invalid Input"
             learn_address
         end 
