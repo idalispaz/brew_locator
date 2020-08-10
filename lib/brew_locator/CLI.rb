@@ -24,9 +24,9 @@ class CLI
     end
 
     def zip_code
-        puts "Would You like to search again?"
-        puts "yes"
-        puts "no"
+        puts "Would You like to search again?".colorize(:green)
+        puts "Yes"
+        puts "No"
         puts "\n"
         @user_input = gets.chomp
         case @user_input 
@@ -36,7 +36,8 @@ class CLI
             goodbye 
         else 
             puts "\n"
-            puts "Invalid Input"
+            puts "Didn't quite understand, Please try again: Yes or No?"
+            puts "\n"
             zip_code
         end 
     end 
