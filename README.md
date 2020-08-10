@@ -1,8 +1,6 @@
 # BrewLocator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/brew_locator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome! This little ruby gem will help you find breweries nearby. It all works with you just typing in your zipcode and the magic beings. Once you have typed in the zip code it will list a set of breweries that are in that area code, if nothing is available in that zip code it will prompt you to wether you'd like to try again or to exit out. You will be able get the name of the brewery, the city it's in, it's address, and the website for the brewery. Have fun with it! 
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In the start up it will ask you to type in your zip code. Once you have typed in your zip code and pressed enter it will list those breweries in that applied zip. You as well will be promted wether to type in another zip code or to exit out by saying no. 
 
 ## Development
 
