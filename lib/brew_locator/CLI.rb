@@ -13,10 +13,10 @@ class CLI
     def menu 
         puts "\n"
         puts "Please type in your 5 digit zip code:".colorize(:yellow)
-            @api_1 = APIService.new
+            @api = APIService.new
             @user_input = gets.chomp 
             if @user_input != "exit"
-                brewery = @api_1.get_breweries_by_zip_code(@user_input)
+                brewery = @api.get_breweries_by_zip_code(@user_input)
                 learn_address
             else
                 goodbye 
