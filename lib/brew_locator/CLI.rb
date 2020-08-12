@@ -7,7 +7,7 @@ class CLI
     end 
 
     def welcome
-        puts "Hi there! Welcome to Brew! Where you can find breweries in your area! In the menu you will type in your zip code or type in 'exit' to end program.".colorize(:yellow)
+        puts "Hi there! Welcome to Brew! Where you can find breweries in your area! Down below you will type in your zip code or type in 'exit' to end program.".colorize(:yellow)
     end 
     
     def menu 
