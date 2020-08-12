@@ -28,7 +28,8 @@ class CLI
         puts "Yes"
         puts "No"
         puts "\n"
-        @user_input = gets.chomp
+        @user_input = gets.chomp 
+        puts "\n"
         case @user_input 
         when "yes"
             menu
@@ -44,6 +45,7 @@ class CLI
     
     def goodbye 
         puts "Thank you for using Brew! Until next time!".colorize(:yellow)
+        puts "\n"
         exit 
     end 
 end 

@@ -4,14 +4,11 @@ class APIService
 
         #get breweries based on zip code 
     def get_breweries_by_zip_code(zip)
-        @zipstring = zip
+        zipstring = zip
         uri = URI(BASE_URI + "#{@zipstring}")
         @breweries = make_request(uri)
-            if @breweries != nil 
+            @breweries != nil 
                  brewery_name_list
-            else   
-                puts "I couldn't quite register that zip code. Please try again or try another code: "
-            end  
      end 
 
     #make the request and get the response
