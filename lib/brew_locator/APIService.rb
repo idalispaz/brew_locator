@@ -4,7 +4,7 @@ class APIService
 
         #get breweries based on zip code 
     def get_breweries_by_zip_code(zip)
-        @zipstring = zip
+       @zipstring = zip
         uri = URI(BASE_URI + "#{@zipstring}")
         @breweries = make_request(uri)
              @breweries != nil 
