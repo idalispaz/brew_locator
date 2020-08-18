@@ -15,20 +15,16 @@ class Brewers
         @@all
     end 
 
-    def self.find_by_name(name)
+     def self.find_by_name(name)
         self.all.detect { | brewery | brewery.name.downcase == name.downcase } 
-    end 
+     end 
+
+    # def list_information
+    #     self.map.with_index { |k, v| puts "#{k} : #{v}"}
+    # end 
+
 
     def print_pretty
         puts @name
-        # puts "\n"
-        # puts @street
-        # puts "\n"
-        # puts @city 
-        # puts "\n"
-        # puts @brewery_type
-        # puts "\n"
-        # puts @website_url.colorize(:blue)
-        # puts "\n"
     end 
 end 

@@ -48,7 +48,8 @@ class CLI
             goodbye 
         else 
             puts "\n"
-            puts "Didn't quite understand, Please try again."
+            puts "Didn't quite understand, Please try again: Yes or No?"
+            puts "\n"
         end 
     end 
 
