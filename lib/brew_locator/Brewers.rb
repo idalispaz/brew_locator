@@ -19,11 +19,6 @@ class Brewers
         self.all.detect { | brewery | brewery.name.downcase == name.downcase } 
      end 
 
-    # def list_information
-    #     self.map.with_index { |k, v| puts "#{k} : #{v}"}
-    # end 
-
-
     def print_pretty
         puts @name
     end 
